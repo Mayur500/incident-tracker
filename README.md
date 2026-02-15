@@ -35,22 +35,18 @@ Navigate to the backend directory:
 
 cd backend
 
-
 Install dependencies:
 
 npm install
-
 
 Setup environment variables: create a .env file with:
 
 DATABASE_URL=postgresql://USER:PASSWORD@HOST:PORT/DATABASE
 PORT=4000
 
-
 Generate Prisma client:
 
 npx prisma generate
-
 
 Apply database migrations:
 
@@ -60,7 +56,6 @@ npx prisma migrate dev --name init
 Start backend server:
 
 npm run dev
-
 
 Backend runs at: http://localhost:4000
 
@@ -79,7 +74,6 @@ npm install
 Start frontend development server:
 
 npm start
-
 
 Frontend runs at: http://localhost:3000
 
@@ -120,27 +114,4 @@ Tradeoff: Frontend lacks form-level validation beyond required fields; can be im
 
 Prisma ORM:
 
-Provides type safety and easy migrations.
-
-Tradeoff: Small performance overhead compared to raw SQL queries, but acceptable for CRUD app.
-
-
-
-
-/backend
-  ├─ controllers/
-  ├─ db.js
-  ├─ routes/
-  ├─ validators/
-  ├─ package.json
-  └─ prisma/
-      └─ schema.prisma
-/frontend
-  ├─ pages/
-  │   ├─ IncidentList.js
-  │   ├─ IncidentDetail.js
-  │   └─ CreateIncident.js
-  ├─ api/
-  │   └─ incidents.js
-  ├─ App.js
-  └─ package.json
+Provides type safety and easy migrations
