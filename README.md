@@ -75,7 +75,7 @@ Start frontend development server:
 
 npm start
 
-Frontend runs at: http://localhost:3000
+Frontend runs at: http://localhost:5173/
 
 Make sure the backend is running at http://localhost:4000/api/incidents
 
