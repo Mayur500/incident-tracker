@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    background-color: #f5f6f8;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 20px;
+  }
+  
+  button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 4px;
+    background-color: #2563eb;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button.secondary {
+    background-color: #6b7280;
+  }
+  
+  button:disabled {
+    background-color: #c7c7c7;
+    cursor: not-allowed;
+  }
+  
+  .filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  input, select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f0f2f5;
+    cursor: pointer;
+  }
+  
+  tr {
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  tr:hover {
+    background-color: #f9fafb;
+  }
+
+  .badge {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .sev1 { background: #fee2e2; color: #b91c1c; }
+  .sev2 { background: #ffedd5; color: #c2410c; }
+  .sev3 { background: #fef3c7; color: #92400e; }
+  .sev4 { background: #ecfeff; color: #155e75; }
+  
+  .pagination {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .form textarea {
+    min-height: 100px;
+  }
+  
+.incident-detail {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.incident-detail button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2563eb;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.incident-detail button.secondary {
+  background-color: #6b7280;
+}
+
+.incident-detail button:disabled {
+  background-color: #c7c7c7;
+  cursor: not-allowed;
+}
+
+.incident-detail h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+.incident-detail input,
+.incident-detail select,
+.incident-detail textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.incident-detail input:focus,
+.incident-detail select:focus,
+.incident-detail textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.incident-detail textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.incident-detail .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.incident-detail .save-btn {
+  background-color: #16a34a;
+}
+
+.incident-detail .save-btn:hover {
+  background-color: #15803d;
+}
+
+.incident-detail .back-btn {
+  background-color: #6b7280;
+  margin-bottom: 25px;
+}
+
+.incident-detail .back-btn:hover {
+  background-color: #4b5563;
+}
+
+
+.create-incident {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 25px 30px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.create-incident h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+.create-incident .form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.create-incident input,
+.create-incident select,
+.create-incident textarea {
+  padding: 10px 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  outline: none;
+  width: 100%;
+}
+
+.create-incident input:focus,
+.create-incident select:focus,
+.create-incident textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+.create-incident textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.create-incident .save-btn {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #16a34a; 
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.create-incident .save-btn:disabled {
+  background-color: #a7f3d0;
+  cursor: not-allowed;
+}
+
+.create-incident .save-btn:hover:not(:disabled) {
+  background-color: #15803d;
+}
+
+.create-incident .back-btn {
+  background-color: #6b7280; 
+  margin-bottom: 20px;
+  padding: 8px 14px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.create-incident .back-btn:hover {
+  background-color: #4b5563;
+}
+
+.create-incident .error-message {
+  color: #b91c1c;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
